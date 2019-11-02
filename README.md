@@ -1,7 +1,5 @@
 # Terraform Compliance
 
-
-
 [![](https://img.shields.io/docker/pulls/cnservices/terraform-compliance)](https://hub.docker.com/r/cnservices/terraform-compliance/)
 [![](hhttps://img.shields.io/docker/build/cnservices/terraform-compliance)](https://hub.docker.com/r/cnservices/terraform-compliance/)
 [![](https://img.shields.io/docker/automated/cnservices/terraform-compliance)](https://hub.docker.com/r/cnservices/terraform-compliance/)
