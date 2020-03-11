@@ -4,7 +4,7 @@ FROM python:3.8-alpine
 LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Install required tools
-RUN apk --update add git make less openssh libxml2 && \
+RUN apk --update add git make less openssh g++ gcc libxslt libxslt-dev libc-dev libxml2 && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/* && \
     pip install --upgrade pip
