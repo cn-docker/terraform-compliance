@@ -1,6 +1,6 @@
-FROM hashicorp/terraform as tf
+FROM hashicorp/terraform:1.1.5 as tf
 
-FROM python:3.10-alpine
+FROM python:3.10.2-alpine
 LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Install required tools
@@ -13,4 +13,4 @@ RUN apk --update add git make less openssh openssl-dev g++ gcc libxslt libxslt-d
 COPY --from=tf /bin/terraform /bin/terraform
 
 # Install Terraform Compliance
-RUN pip install terraform-compliance
+RUN pip install terraform-compliance==1.3.31
