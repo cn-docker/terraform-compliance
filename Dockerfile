@@ -14,4 +14,4 @@ COPY --from=tf /bin/terraform /bin/terraform
 
 # Install dependencies
 COPY requirements.txt .
-RUN RUN pip install --no-cache-dir --requirement requirements.txt
+RUN pip install --no-cache-dir --requirement requirements.txt
