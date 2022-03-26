@@ -12,5 +12,6 @@ RUN apk --update add git make less openssh openssl-dev g++ gcc libxslt libxslt-d
 # Copy Terraform Binary
 COPY --from=tf /bin/terraform /bin/terraform
 
-# Install Terraform Compliance
-RUN pip install terraform-compliance==1.3.31
+# Install dependencies
+COPY requirements.txt .
+RUN RUN pip install --no-cache-dir --requirement requirements.txt
