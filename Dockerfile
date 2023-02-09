@@ -1,6 +1,6 @@
 FROM hashicorp/terraform:1.3.7 as tf
 
-FROM python:3.11.1-alpine
+FROM python:3.11.2-alpine
 LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Install required tools
