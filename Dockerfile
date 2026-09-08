@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:1.16.0 AS tf
+FROM hashicorp/terraform:1.16.1 AS tf
 
 FROM python:3.14.7-alpine
 LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
