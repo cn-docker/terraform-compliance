@@ -1,1 +1,1 @@
-terraform-compliance==1.15.1
+terraform-compliance==1.16.0
